@@ -80,7 +80,7 @@ export default {
 
 <style scoped>
 header {
-    height: 270px;
+    height: 220px;
     background-color: black;
 }
 
@@ -99,7 +99,6 @@ img {
     justify-content: center;
     align-items: center;
     background-color: white;
-    margin-top: 40px;
 }
 
 ul {
@@ -122,7 +121,7 @@ h2 {
 }
 
 .nav-bottom {
-    height: 130px;
+    height: 117px;
     display: flex;
     align-items: center;
     margin-left: 240px;
