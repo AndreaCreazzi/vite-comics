@@ -1,11 +1,37 @@
 <script>
+import AppHeader from './components/AppHeader.vue'
+import AppMain from './components/AppMain.vue'
+import AppFooter from './components/AppFooter.vue'
 export default {
+  components: { AppHeader, AppMain, AppFooter },
   data() {
-    return
+    return {
+
+    }
   }
 }
 </script>
 
-<template></template>
+<template>
+  <AppHeader />
+  <AppMain />
+  <AppFooter />
+</template>
 
-<style></style>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 970px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+</style>
