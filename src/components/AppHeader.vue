@@ -68,8 +68,8 @@ export default {
             <div class="col">
                 <ul>
                     <li v-for="navbarOption in navbarOptions" :key="navbarOption.text"><a
-                            :class="{ 'active': navbarOption.current }" :url="navbarOption.url">{{
-                                navbarOption.text }}</a></li>
+                            :class="{ 'active': navbarOption.current }" :url="navbarOption.url">{{ navbarOption.text }}</a>
+                    </li>
                 </ul>
             </div>
         </nav>

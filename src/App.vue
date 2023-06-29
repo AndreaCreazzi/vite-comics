@@ -20,24 +20,6 @@ export default {
   <AppFooter />
 </template>
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
-.container {
-  max-width: 970px;
-  margin: auto;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
+<style lang="scss">
+@run './assets/sass/style.sass'
 </style>
