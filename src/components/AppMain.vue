@@ -60,7 +60,6 @@ export default {
 
 <style scoped>
 main {
-    height: 350px;
     background-image: url(/img/dc-logo-bg.png), url(img/footer-bg.jpg);
     background-position: right 30% top 30%, center;
     background-repeat: no-repeat;
