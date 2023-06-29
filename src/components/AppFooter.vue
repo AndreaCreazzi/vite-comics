@@ -26,7 +26,7 @@ export default {
     </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 footer {
     background-color: #303030;
 }
