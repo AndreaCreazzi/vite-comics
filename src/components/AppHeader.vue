@@ -79,7 +79,7 @@ export default {
     </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 header {
     height: 220px;
     background-color: black;
@@ -105,16 +105,16 @@ img {
 ul {
     display: flex;
     margin-right: 80px;
-}
 
-ul li {
-    list-style-type: none;
-}
+    li {
+        list-style-type: none;
+    }
 
-ul li a {
-    text-decoration: none;
-    font-size: 0.9rem;
-    padding: 2.4rem 0.6rem;
+    a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        padding: 2.4rem 0.6rem;
+    }
 }
 
 ul li a:hover,

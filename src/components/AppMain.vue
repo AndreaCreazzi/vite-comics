@@ -58,7 +58,7 @@ export default {
     </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 main {
     background-image: url(/img/dc-logo-bg.png), url(img/footer-bg.jpg);
     background-position: right 30% top 30%, center;
@@ -85,13 +85,15 @@ h3 {
     margin-bottom: 10px;
 }
 
-ul li {
-    list-style-type: none;
-}
+ul {
+    li {
+        list-style-type: none;
+    }
 
-ul li a {
-    text-decoration: none;
-    font-size: 0.8rem;
-    color: #737578;
+    a {
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: #737578;
+    }
 }
 </style>
