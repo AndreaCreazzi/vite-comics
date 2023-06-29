@@ -67,8 +67,9 @@ export default {
             </div>
             <div class="col">
                 <ul>
-                    <li v-for="navbarOption in navbarOptions" :key="navbarOption.text"><a :url="navbarOption.url">{{
-                        navbarOption.text }}</a></li>
+                    <li v-for="navbarOption in navbarOptions" :key="navbarOption.text"><a
+                            :class="{ 'active': navbarOption.current }" :url="navbarOption.url">{{
+                                navbarOption.text }}</a></li>
                 </ul>
             </div>
         </nav>
@@ -113,7 +114,13 @@ ul li {
 ul li a {
     text-decoration: none;
     font-size: 0.9rem;
-    padding: 0 0.6rem;
+    padding: 2.4rem 0.6rem;
+}
+
+ul li a:hover,
+.active {
+    border-bottom: 3px solid #0282f9;
+    color: #0282f9;
 }
 
 h2 {
@@ -124,6 +131,6 @@ h2 {
     height: 117px;
     display: flex;
     align-items: center;
-    margin-left: 240px;
+    margin-left: 420px;
 }
 </style>
