@@ -59,6 +59,72 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
+    <header>
+        <nav>
+            <div class="col">
+                <img src="../../public/img/dc-logo.png" alt="logo DC">
+            </div>
+            <div class="col">
+                <ul>
+                    <li v-for="navbarOption in navbarOptions" :key="navbarOption.text"><a :url="navbarOption.url">{{
+                        navbarOption.text }}</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="nav-bottom">
+            <h2>Content goes here</h2>
+        </div>
+    </header>
+</template>
 
-<style scoped></style>
+<style scoped>
+header {
+    height: 270px;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+}
+
+img {
+    max-width: 70px;
+}
+
+.col {
+    height: 100px;
+    flex-basis: calc(100% / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 40px;
+}
+
+ul {
+    display: flex;
+    margin-right: 80px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0 0.6rem;
+}
+
+h2 {
+    color: white;
+}
+
+.nav-bottom {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    margin-left: 240px;
+}
+</style>
