@@ -83,7 +83,7 @@ export default {
             <ComicCard :heroes="heroes" />
         </div>
         <div class="load">
-            <p>Load more</p>
+            <p>LOAD MORE</p>
         </div>
     </header>
 </template>

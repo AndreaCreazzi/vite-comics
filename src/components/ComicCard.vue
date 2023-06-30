@@ -36,7 +36,8 @@ export default {
         color: white;
         font-size: 0.8rem;
         display: block;
-        padding-left: 5px;
+        text-align: center;
+        text-transform: uppercase;
     }
 }
 </style>
