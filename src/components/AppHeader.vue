@@ -1,5 +1,7 @@
 <script>
+import ComicCard from '../components/ComicCard.vue'
 export default {
+    props: { heroes: Array },
     data() {
         return {
             navbarOptions: [
@@ -55,7 +57,8 @@ export default {
                 },
             ]
         }
-    }
+    },
+    components: { ComicCard }
 }
 </script>
 
@@ -76,12 +79,18 @@ export default {
         <div class="nav-bottom">
 
         </div>
+        <div class="card-container">
+            <ComicCard :heroes="heroes" />
+        </div>
+        <div class="load">
+            <p>Load more</p>
+        </div>
     </header>
 </template>
 
 <style lang="scss" scoped>
 header {
-    height: 1100px;
+    height: 1200px;
     background-color: black;
 }
 
@@ -129,8 +138,26 @@ h2 {
 
 .nav-bottom {
     height: 400px;
-    background-image: url(../../public/img/jumbotron.jpg);
+    background-image: url(/img/jumbotron.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.card-container {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.load {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    color: white;
+    background-color: #0282f9;
+    padding: 10px 70px;
 }
 </style>

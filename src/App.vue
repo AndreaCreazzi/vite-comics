@@ -99,7 +99,7 @@ export default {
 </script>
 
 <template>
-  <AppHeader />
+  <AppHeader :heroes="heroes" />
   <AppJumbotron />
   <AppMain />
   <AppFooter />
