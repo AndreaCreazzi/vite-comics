@@ -11,7 +11,9 @@ export default {
 
 <template>
     <div v-for="hero in heroes" class="card">
-        <img :src="hero.thumb" alt="">
+        <div class="img-container">
+            <img :src="hero.thumb" alt="">
+        </div>
         <p>{{ hero.series }}</p>
     </div>
 </template>
@@ -20,15 +22,20 @@ export default {
 .card {
     flex-basis: calc(100% / 6);
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    margin-top: 40px;
+    padding: 0 30px;
+
+    .img-container {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
 
     img {
-        max-width: 130px;
+        width: 100%;
         height: auto;
         display: block;
-        margin-bottom: 10px;
         cursor: pointer;
     }
 

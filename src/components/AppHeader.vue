@@ -91,7 +91,7 @@ export default {
 <style lang="scss" scoped>
 header {
     height: 1200px;
-    background-color: black;
+    background-color: #1c1c1c;
 }
 
 nav {
