@@ -29,6 +29,7 @@ export default {
         height: auto;
         display: block;
         margin-bottom: 10px;
+        cursor: pointer;
     }
 
     p {
