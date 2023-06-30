@@ -30,6 +30,7 @@ export default {
         width: 100%;
         height: 200px;
         overflow: hidden;
+        margin-bottom: 15px;
     }
 
     img {
