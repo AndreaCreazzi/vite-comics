@@ -25,7 +25,7 @@ export default {
     flex-direction: column;
 
     img {
-        max-width: 100px;
+        max-width: 130px;
         height: auto;
         display: block;
         margin-bottom: 10px;
