@@ -63,7 +63,7 @@ export default {
     <header>
         <nav>
             <div class="col">
-                <img src="../../public/img/dc-logo.png" alt="logo DC">
+                <img src="/img/dc-logo.png" alt="logo DC">
             </div>
             <div class="col">
                 <ul>
