@@ -74,14 +74,14 @@ export default {
             </div>
         </nav>
         <div class="nav-bottom">
-            <h2>Content goes here</h2>
+
         </div>
     </header>
 </template>
 
 <style lang="scss" scoped>
 header {
-    height: 220px;
+    height: 1100px;
     background-color: black;
 }
 
@@ -128,9 +128,9 @@ h2 {
 }
 
 .nav-bottom {
-    height: 117px;
-    display: flex;
-    align-items: center;
-    margin-left: 420px;
+    height: 400px;
+    background-image: url(../../public/img/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 </style>
